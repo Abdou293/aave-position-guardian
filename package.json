@@ -10,6 +10,7 @@
   },
   "scripts": {
     "prepare": "node scripts/enable-git-hooks.mjs",
+    "dev": "tsx --env-file-if-exists=.env src/main.ts",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "test": "vitest run",
     "verify:addresses": "tsx --env-file-if-exists=.env scripts/verify-addresses.ts",
@@ -19,6 +20,7 @@
     "read:position": "tsx --env-file-if-exists=.env scripts/read-position.ts"
   },
   "dependencies": {
+    "grammy": "^1.48.0",
     "viem": "^2.58.7"
   },
   "devDependencies": {
