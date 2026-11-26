@@ -17,9 +17,16 @@
     "scan:secrets": "node scripts/scan-folder.mjs",
     "scan:history": "gitleaks git . --config .gitleaks.toml --redact --no-banner",
     "scan:all": "npm run scan:secrets && npm run scan:history",
-    "read:position": "tsx --env-file-if-exists=.env scripts/read-position.ts"
+    "read:position": "tsx --env-file-if-exists=.env scripts/read-position.ts",
+    "hash:password": "tsx scripts/hash-password.ts",
+    "session:secret": "node -e \"console.log('SESSION_SECRET='+require('crypto').randomBytes(48).toString('base64url'))\"",
+    "dashboard:dev": "npm --prefix dashboard run dev",
+    "dashboard:build": "npm --prefix dashboard run build"
   },
   "dependencies": {
+    "@fastify/cookie": "^11.1.5",
+    "@fastify/rate-limit": "^11.3.0",
+    "fastify": "^5.12.8",
     "grammy": "^1.48.0",
     "viem": "^2.58.7"
   },

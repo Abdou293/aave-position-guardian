@@ -132,6 +132,13 @@ export class SqliteStore implements Store {
     return r ? toSnapshot(r) : null;
   }
 
+  async latestOkSnapshot(network: NetworkKey, address: Address): Promise<SnapshotRow | null> {
+    const r = this.db
+      .prepare("SELECT * FROM snapshots WHERE network = ? AND address = ? AND status = 'ok' ORDER BY at DESC, id DESC LIMIT 1")
+      .get(network, address) as Row | undefined;
+    return r ? toSnapshot(r) : null;
+  }
+
   async snapshotHistory(network: NetworkKey, address: Address, sinceMs: number): Promise<SnapshotRow[]> {
     const rows = this.db
       .prepare('SELECT * FROM snapshots WHERE network = ? AND address = ? AND at >= ? ORDER BY at, id')
@@ -241,8 +248,12 @@ export class SqliteStore implements Store {
     for (const a of rows) stmt.run(a.at, a.userId, a.network, a.address, a.eventId, a.kind, a.decision, a.reason);
   }
 
-  async listAudit(limit: number): Promise<AuditRow[]> {
-    const rows = this.db.prepare('SELECT * FROM audit_log ORDER BY at DESC, id DESC LIMIT ?').all(limit) as Row[];
+  async listAudit(limit: number, opts: { userId?: number } = {}): Promise<AuditRow[]> {
+    const rows = (
+      opts.userId !== undefined
+        ? this.db.prepare('SELECT * FROM audit_log WHERE user_id = ? ORDER BY at DESC, id DESC LIMIT ?').all(opts.userId, limit)
+        : this.db.prepare('SELECT * FROM audit_log ORDER BY at DESC, id DESC LIMIT ?').all(limit)
+    ) as Row[];
     return rows.map((r) => ({
       at: Number(r.at),
       userId: r.user_id === null ? null : Number(r.user_id),

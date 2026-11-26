@@ -1,4 +1,5 @@
 // Reads and validates configuration from environment variables (.env in development).
+import { isValidPasswordHash, MIN_SESSION_SECRET_LENGTH } from '../api/auth.js';
 import { NETWORK_KEYS, type NetworkKey } from '../chain/networks.js';
 
 export interface AppConfig {
@@ -9,6 +10,13 @@ export interface AppConfig {
   snapshotRetentionMs: number;
   /** Networks to monitor (live mode: must also have verified addresses). */
   networks: NetworkKey[];
+  /** Dashboard API */
+  apiHost: string;
+  apiPort: number;
+  adminPasswordHash: string | null;
+  sessionSecret: string | null;
+  secureCookies: boolean;
+  trustProxy: boolean;
 }
 
 const PLACEHOLDER = /^(|your-.*|change-me.*)$/i;
@@ -36,6 +44,20 @@ export function loadConfig(env: NodeJS.ProcessEnv = process.env): AppConfig {
   const unknown = networks.filter((n) => !NETWORK_KEYS.includes(n as NetworkKey));
   if (unknown.length) errors.push(`Unknown network(s) in NETWORKS: ${unknown.join(', ')}`);
 
+  const apiPort = Number(env.PORT ?? env.API_PORT ?? 4000);
+  if (!Number.isInteger(apiPort) || apiPort < 1 || apiPort > 65535) errors.push('PORT / API_PORT must be a valid port number.');
+
+  const rawHash = env.ADMIN_PASSWORD_HASH?.trim() ?? '';
+  const adminPasswordHash = rawHash ? rawHash : null;
+  if (adminPasswordHash && !isValidPasswordHash(adminPasswordHash)) {
+    errors.push('ADMIN_PASSWORD_HASH is not a valid hash. Generate it with: npm run hash:password');
+  }
+  const rawSecret = env.SESSION_SECRET?.trim() ?? '';
+  const sessionSecret = PLACEHOLDER.test(rawSecret) ? null : rawSecret;
+  if (sessionSecret && sessionSecret.length < MIN_SESSION_SECRET_LENGTH) {
+    errors.push(`SESSION_SECRET must be at least ${MIN_SESSION_SECRET_LENGTH} random characters.`);
+  }
+
   if (errors.length) throw new Error(`Invalid configuration:\n- ${errors.join('\n- ')}`);
 
   return {
@@ -45,5 +67,11 @@ export function loadConfig(env: NodeJS.ProcessEnv = process.env): AppConfig {
     pollIntervalMs,
     snapshotRetentionMs: retentionDays * 24 * 60 * 60_000,
     networks: networks as NetworkKey[],
+    apiHost: env.API_HOST?.trim() || (env.PORT ? '0.0.0.0' : '127.0.0.1'),
+    apiPort,
+    adminPasswordHash,
+    sessionSecret,
+    secureCookies: (env.COOKIE_SECURE ?? (env.NODE_ENV === 'production' ? 'true' : 'false')).trim() === 'true',
+    trustProxy: env.TRUST_PROXY?.trim() === 'true',
   };
 }

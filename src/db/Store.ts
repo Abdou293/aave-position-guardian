@@ -106,6 +106,8 @@ export interface Store {
   // Snapshots (health-factor history)
   insertSnapshots(rows: SnapshotRow[]): Promise<void>;
   latestSnapshot(network: NetworkKey, address: Address): Promise<SnapshotRow | null>;
+  /** Latest FRESH (status ok) snapshot, used to show the last known values when reads fail. */
+  latestOkSnapshot(network: NetworkKey, address: Address): Promise<SnapshotRow | null>;
   snapshotHistory(network: NetworkKey, address: Address, sinceMs: number): Promise<SnapshotRow[]>;
   pruneSnapshots(olderThanMs: number): Promise<number>;
 
@@ -123,7 +125,7 @@ export interface Store {
 
   // Audit log
   appendAudit(rows: AuditRow[]): Promise<void>;
-  listAudit(limit: number): Promise<AuditRow[]>;
+  listAudit(limit: number, opts?: { userId?: number }): Promise<AuditRow[]>;
 
   // Network health (persisted so the dashboard survives restarts)
   saveNetworkHealth(health: NetworkHealth[]): Promise<void>;
