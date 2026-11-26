@@ -1,0 +1,26 @@
+# Render blueprint for the PUBLIC DEMO backend (simulated data only).
+# Real (live) use is documented in docs/LIVE-SETUP.md and is NOT deployed publicly.
+services:
+  - type: web
+    name: aave-position-guardian-demo
+    runtime: node
+    plan: free
+    # devDependencies are needed to compile TypeScript, then removed.
+    buildCommand: npm ci --include=dev && npm run build && npm prune --omit=dev
+    startCommand: npm start
+    healthCheckPath: /healthz
+    autoDeploy: true
+    envVars:
+      - key: APP_MODE
+        value: demo # never change this on the public deployment
+      - key: NODE_ENV
+        value: production
+      - key: COOKIE_SECURE
+        value: "true"
+      - key: TRUST_PROXY
+        value: "true" # Render puts a proxy in front of the app
+      # Optional, set in the Render dashboard (never in this file):
+      - key: DATABASE_URL
+        sync: false # e.g. a free Neon Postgres URL with ?sslmode=require. Empty = SQLite, reset on every restart.
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false # optional demo bot. Do not run the same token anywhere else at the same time.
