@@ -1,0 +1,40 @@
+# --- Secrets: NEVER commit these ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.keystore
+
+# --- Dependencies & build output ---
+node_modules/
+dist/
+build/
+.next/
+out/
+coverage/
+*.tsbuildinfo
+
+# --- Local data (SQLite databases, logs, caches) ---
+data/
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+logs/
+*.log
+.cache/
+
+# --- Gitleaks reports (may contain redacted findings) ---
+gitleaks-report*.json
+
+# --- Editors & OS ---
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- Claude Code local settings ---
+.claude/settings.local.json

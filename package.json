@@ -1,0 +1,33 @@
+{
+  "name": "aave-position-guardian",
+  "version": "0.1.0",
+  "description": "Read-only, non-custodial early-warning monitor for Aave V3 borrowers (health factor alerts via Telegram + dashboard). Portfolio project.",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "prepare": "node scripts/enable-git-hooks.mjs",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "verify:addresses": "tsx --env-file-if-exists=.env scripts/verify-addresses.ts",
+    "scan:secrets": "gitleaks dir . --config .gitleaks.toml --redact --no-banner",
+    "scan:history": "gitleaks git . --config .gitleaks.toml --redact --no-banner",
+    "scan:all": "npm run scan:secrets && npm run scan:history"
+  },
+  "dependencies": {
+    "viem": "^2.58.7"
+  },
+  "devDependencies": {
+    "@bgd-labs/aave-address-book": "^4.44.22",
+    "@types/node": "^26.6.11",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.2"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
+  }
+}

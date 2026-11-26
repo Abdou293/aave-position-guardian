@@ -1,0 +1,33 @@
+# gitleaks configuration: default rules + extra rules for crypto/Telegram secrets.
+title = "aave-position-guardian gitleaks config"
+
+[extend]
+useDefault = true
+
+[[rules]]
+id = "telegram-bot-token"
+description = "Telegram bot token"
+regex = '''\b[0-9]{8,10}:[A-Za-z0-9_-]{35}\b'''
+keywords = [":"]
+
+[[rules]]
+id = "hex-private-key"
+description = "Possible 32-byte hex private key"
+regex = '''(?i)(?:priv(?:ate)?[_-]?key|secret|mnemonic|seed)["'\s:=]{1,5}(?:0x)?[0-9a-f]{64}\b'''
+keywords = ["priv", "secret", "mnemonic", "seed"]
+
+[[rules]]
+id = "seed-phrase-assignment"
+description = "Possible BIP-39 seed phrase assigned to a variable"
+regex = '''(?i)(?:mnemonic|seed[_-]?phrase|recovery[_-]?phrase)["'\s:=]{1,5}["']?(?:[a-z]{3,8}\s+){11,23}[a-z]{3,8}'''
+keywords = ["mnemonic", "seed", "recovery"]
+
+[[rules]]
+id = "rpc-url-with-key"
+description = "RPC URL with an embedded API key (Alchemy / Infura)"
+regex = '''https://[a-z0-9-]+\.(?:g\.alchemy\.com/v2|infura\.io/v3)/[A-Za-z0-9_-]{20,}'''
+keywords = ["alchemy", "infura"]
+
+[allowlist]
+description = "Placeholders in .env.example only"
+paths = ['''\.env\.example$''']
