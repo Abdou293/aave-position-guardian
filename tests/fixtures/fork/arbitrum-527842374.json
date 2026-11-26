@@ -1,0 +1,5230 @@
+{
+ "_comment": "Recorded by scripts/fork-validate.ts from a LOCAL Anvil fork at a pinned block. Public on-chain data only.",
+ "network": "arbitrum",
+ "chainId": 42161,
+ "forkBlock": "527842374",
+ "forkTimestamp": 1795731831,
+ "recordedNow": 1795731841000,
+ "market": {
+  "chainId": 42161,
+  "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+  "poolAddressesProvider": "0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb",
+  "oracle": "0xb56c2F0B653B2e0b10C9b928C8580Ac5Df02C7C7",
+  "poolDataProvider": "0x243Aa95cAC2a25651eda86e80bEe66114413c43b",
+  "uiPoolDataProvider": "0x13c833256BD767da2320d727a3691BAff3770E39",
+  "multicall3": "0xcA11bde05977b3631167028862bE2a173976CA11"
+ },
+ "wallets": [
+  {
+   "wallet": "0x9Fb2e86637d4BB0B8092DB29e9c43cAa8634C9E9",
+   "why": "borrower found in public Borrow events"
+  },
+  {
+   "wallet": "0x71eB4B47BAB029348AE6Ef5d40B1784f07825675",
+   "why": "borrower found in public Borrow events"
+  },
+  {
+   "wallet": "0x5BD136eBaB3494cD4675f69E79bCDce35d5141d6",
+   "why": "borrower found in public Borrow events"
+  },
+  {
+   "wallet": "0x8e198424AAcf7908640e5F266f81F3Fa6A639019",
+   "why": "borrower found in public Borrow events"
+  },
+  {
+   "wallet": "0xe5EC006540bE4F7CbB2CBc7Be79708a6d96F90dC",
+   "why": "borrower found in public Borrow events"
+  },
+  {
+   "wallet": "0x053D55f9B5AF8694c503EB288a1B7E552f590710",
+   "why": "Aave Collector (treasury), from the official address book"
+  },
+  {
+   "wallet": "0xcA11bde05977b3631167028862bE2a173976CA11",
+   "why": "Multicall3 contract (expected: no position)"
+  }
+ ],
+ "blockNumbers": [
+  "527842374"
+ ],
+ "calls": [
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getAllReservesTokens([])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "symbol": "DAI",
+      "tokenAddress": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1"
+     },
+     {
+      "symbol": "LINK",
+      "tokenAddress": "0xf97f4df75117a78c1A5a0DBb814Af92458539FB4"
+     },
+     {
+      "symbol": "USDC",
+      "tokenAddress": "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8"
+     },
+     {
+      "symbol": "WBTC",
+      "tokenAddress": "0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f"
+     },
+     {
+      "symbol": "WETH",
+      "tokenAddress": "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1"
+     },
+     {
+      "symbol": "USD₮0",
+      "tokenAddress": "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9"
+     },
+     {
+      "symbol": "AAVE",
+      "tokenAddress": "0xba5DdD1f9d7F570dc94a51479a000E3BCE967196"
+     },
+     {
+      "symbol": "EURS",
+      "tokenAddress": "0xD22a58f79e9481D1a88e00c343885A588b34b68B"
+     },
+     {
+      "symbol": "wstETH",
+      "tokenAddress": "0x5979D7b546E38E414F7E9822514be443A4800529"
+     },
+     {
+      "symbol": "MAI",
+      "tokenAddress": "0x3F56e0c36d275367b8C502090EDF38289b3dEa0d"
+     },
+     {
+      "symbol": "rETH",
+      "tokenAddress": "0xEC70Dcb4A1EFa46b8F2D97C310C9c4790ba5ffA8"
+     },
+     {
+      "symbol": "LUSD",
+      "tokenAddress": "0x93b346b6BC2548dA6A1E7d98E9a421B42541425b"
+     },
+     {
+      "symbol": "USDC",
+      "tokenAddress": "0xaf88d065e77c8cC2239327C5EDb3A432268e5831"
+     },
+     {
+      "symbol": "FRAX",
+      "tokenAddress": "0x17FC002b466eEc40DaE837Fc4bE5c67993ddBd6F"
+     },
+     {
+      "symbol": "ARB",
+      "tokenAddress": "0x912CE59144191C1204E64559FE8253a0e49E6548"
+     },
+     {
+      "symbol": "weETH",
+      "tokenAddress": "0x35751007a407ca6FEFfE80b3cB397736D2cf4dbe"
+     },
+     {
+      "symbol": "GHO",
+      "tokenAddress": "0x7dfF72693f6A4149b17e7C6314655f6A9F7c8B33"
+     },
+     {
+      "symbol": "ezETH",
+      "tokenAddress": "0x2416092f143378750bb29b79eD961ab195CcEea5"
+     },
+     {
+      "symbol": "rsETH",
+      "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
+     },
+     {
+      "symbol": "tBTC",
+      "tokenAddress": "0x6c84a8f1c29108F47a79964b5Fe888D4f4D0dE40"
+     }
+    ]
+   }
+  },
+  {
+   "key": "0xb56c2f0b653b2e0b10c9b928c8580ac5df02c7c7.BASE_CURRENCY_UNIT([])",
+   "result": {
+    "status": "success",
+    "value": {
+     "$n": "100000000"
+    }
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getReserveConfigurationData([\"0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "18"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "7700"
+     },
+     {
+      "$n": "10500"
+     },
+     {
+      "$n": "5000"
+     },
+     true,
+     true,
+     false,
+     true,
+     true
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getReserveConfigurationData([\"0xf97f4df75117a78c1A5a0DBb814Af92458539FB4\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "18"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "7500"
+     },
+     {
+      "$n": "11000"
+     },
+     {
+      "$n": "2000"
+     },
+     true,
+     false,
+     false,
+     true,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getReserveConfigurationData([\"0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "6"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "7800"
+     },
+     {
+      "$n": "10500"
+     },
+     {
+      "$n": "7500"
+     },
+     true,
+     false,
+     false,
+     true,
+     true
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getReserveConfigurationData([\"0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "8"
+     },
+     {
+      "$n": "7800"
+     },
+     {
+      "$n": "8200"
+     },
+     {
+      "$n": "10700"
+     },
+     {
+      "$n": "5000"
+     },
+     true,
+     true,
+     false,
+     true,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getReserveConfigurationData([\"0x82aF49447D8a07e3bd95BD0d56f35241523fBab1\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "18"
+     },
+     {
+      "$n": "8100"
+     },
+     {
+      "$n": "8400"
+     },
+     {
+      "$n": "10500"
+     },
+     {
+      "$n": "1500"
+     },
+     true,
+     true,
+     false,
+     true,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getReserveConfigurationData([\"0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "6"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "7800"
+     },
+     {
+      "$n": "10500"
+     },
+     {
+      "$n": "1000"
+     },
+     true,
+     true,
+     false,
+     true,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getReserveConfigurationData([\"0xba5DdD1f9d7F570dc94a51479a000E3BCE967196\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "18"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "7300"
+     },
+     {
+      "$n": "11000"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     false,
+     false,
+     true,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getReserveConfigurationData([\"0xD22a58f79e9481D1a88e00c343885A588b34b68B\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "2"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "6700"
+     },
+     {
+      "$n": "10750"
+     },
+     {
+      "$n": "5000"
+     },
+     true,
+     true,
+     false,
+     true,
+     true
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getReserveConfigurationData([\"0x5979D7b546E38E414F7E9822514be443A4800529\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "18"
+     },
+     {
+      "$n": "7500"
+     },
+     {
+      "$n": "7900"
+     },
+     {
+      "$n": "10720"
+     },
+     {
+      "$n": "500"
+     },
+     true,
+     false,
+     false,
+     true,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getReserveConfigurationData([\"0x3F56e0c36d275367b8C502090EDF38289b3dEa0d\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "18"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "100"
+     },
+     {
+      "$n": "10500"
+     },
+     {
+      "$n": "9500"
+     },
+     true,
+     true,
+     false,
+     true,
+     true
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getReserveConfigurationData([\"0xEC70Dcb4A1EFa46b8F2D97C310C9c4790ba5ffA8\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "18"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "7400"
+     },
+     {
+      "$n": "10750"
+     },
+     {
+      "$n": "5000"
+     },
+     true,
+     false,
+     false,
+     true,
+     true
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getReserveConfigurationData([\"0x93b346b6BC2548dA6A1E7d98E9a421B42541425b\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "18"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "10000"
+     },
+     false,
+     false,
+     false,
+     true,
+     true
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getReserveConfigurationData([\"0xaf88d065e77c8cC2239327C5EDb3A432268e5831\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "6"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "7800"
+     },
+     {
+      "$n": "10500"
+     },
+     {
+      "$n": "1000"
+     },
+     true,
+     true,
+     false,
+     true,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getReserveConfigurationData([\"0x17FC002b466eEc40DaE837Fc4bE5c67993ddBd6F\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "18"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "7200"
+     },
+     {
+      "$n": "10600"
+     },
+     {
+      "$n": "10000"
+     },
+     true,
+     false,
+     false,
+     true,
+     true
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getReserveConfigurationData([\"0x912CE59144191C1204E64559FE8253a0e49E6548\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "18"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "6300"
+     },
+     {
+      "$n": "11000"
+     },
+     {
+      "$n": "2000"
+     },
+     true,
+     false,
+     false,
+     true,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getReserveConfigurationData([\"0x35751007a407ca6FEFfE80b3cB397736D2cf4dbe\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "18"
+     },
+     {
+      "$n": "7500"
+     },
+     {
+      "$n": "7700"
+     },
+     {
+      "$n": "10750"
+     },
+     {
+      "$n": "4500"
+     },
+     true,
+     false,
+     false,
+     true,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getReserveConfigurationData([\"0x7dfF72693f6A4149b17e7C6314655f6A9F7c8B33\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "18"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "1000"
+     },
+     false,
+     true,
+     false,
+     true,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getReserveConfigurationData([\"0x2416092f143378750bb29b79eD961ab195CcEea5\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "18"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "10"
+     },
+     {
+      "$n": "10750"
+     },
+     {
+      "$n": "1500"
+     },
+     true,
+     false,
+     false,
+     true,
+     true
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getReserveConfigurationData([\"0x4186BFC76E2E237523CBC30FD220FE055156b41F\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "18"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "10"
+     },
+     {
+      "$n": "10750"
+     },
+     {
+      "$n": "2000"
+     },
+     true,
+     false,
+     false,
+     true,
+     true
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getReserveConfigurationData([\"0x6c84a8f1c29108F47a79964b5Fe888D4f4D0dE40\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "18"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "7800"
+     },
+     {
+      "$n": "10750"
+     },
+     {
+      "$n": "2000"
+     },
+     true,
+     false,
+     false,
+     true,
+     true
+    ]
+   }
+  },
+  {
+   "key": "0xca11bde05977b3631167028862be2a173976ca11.getCurrentBlockTimestamp([])",
+   "result": {
+    "status": "success",
+    "value": {
+     "$n": "1795731831"
+    }
+   }
+  },
+  {
+   "key": "0xb56c2f0b653b2e0b10c9b928c8580ac5df02c7c7.getAssetsPrices([[\"0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1\",\"0xf97f4df75117a78c1A5a0DBb814Af92458539FB4\",\"0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8\",\"0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f\",\"0x82aF49447D8a07e3bd95BD0d56f35241523fBab1\",\"0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9\",\"0xba5DdD1f9d7F570dc94a51479a000E3BCE967196\",\"0xD22a58f79e9481D1a88e00c343885A588b34b68B\",\"0x5979D7b546E38E414F7E9822514be443A4800529\",\"0x3F56e0c36d275367b8C502090EDF38289b3dEa0d\",\"0xEC70Dcb4A1EFa46b8F2D97C310C9c4790ba5ffA8\",\"0x93b346b6BC2548dA6A1E7d98E9a421B42541425b\",\"0xaf88d065e77c8cC2239327C5EDb3A432268e5831\",\"0x17FC002b466eEc40DaE837Fc4bE5c67993ddBd6F\",\"0x912CE59144191C1204E64559FE8253a0e49E6548\",\"0x35751007a407ca6FEFfE80b3cB397736D2cf4dbe\",\"0x7dfF72693f6A4149b17e7C6314655f6A9F7c8B33\",\"0x2416092f143378750bb29b79eD961ab195CcEea5\",\"0x4186BFC76E2E237523CBC30FD220FE055156b41F\",\"0x6c84a8f1c29108F47a79964b5Fe888D4f4D0dE40\"]])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "99950200"
+     },
+     {
+      "$n": "935751520"
+     },
+     {
+      "$n": "99988158"
+     },
+     {
+      "$n": "6051849000000"
+     },
+     {
+      "$n": "169513510000"
+     },
+     {
+      "$n": "99867000"
+     },
+     {
+      "$n": "9482136600"
+     },
+     {
+      "$n": "109694000"
+     },
+     {
+      "$n": "211926237192"
+     },
+     {
+      "$n": "95300000"
+     },
+     {
+      "$n": "199423925458"
+     },
+     {
+      "$n": "100000000"
+     },
+     {
+      "$n": "99988158"
+     },
+     {
+      "$n": "100000000"
+     },
+     {
+      "$n": "11435717"
+     },
+     {
+      "$n": "187993226095"
+     },
+     {
+      "$n": "100000000"
+     },
+     {
+      "$n": "184779922239"
+     },
+     {
+      "$n": "183973394993"
+     },
+     {
+      "$n": "6051849000000"
+     }
+    ]
+   }
+  },
+  {
+   "key": "0x794a61358d6845594f94dc1db02a252b5b4814ad.getUserAccountData([\"0x9Fb2e86637d4BB0B8092DB29e9c43cAa8634C9E9\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "114357530014"
+     },
+     {
+      "$n": "47298983092"
+     },
+     {
+      "$n": "19028384316"
+     },
+     {
+      "$n": "6300"
+     },
+     {
+      "$n": "5800"
+     },
+     {
+      "$n": "1523188009532608832"
+     }
+    ]
+   }
+  },
+  {
+   "key": "0x794a61358d6845594f94dc1db02a252b5b4814ad.getUserEMode([\"0x9Fb2e86637d4BB0B8092DB29e9c43cAa8634C9E9\"])",
+   "result": {
+    "status": "success",
+    "value": {
+     "$n": "9"
+    }
+   }
+  },
+  {
+   "key": "0x794a61358d6845594f94dc1db02a252b5b4814ad.getUserAccountData([\"0x71eB4B47BAB029348AE6Ef5d40B1784f07825675\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "56238870633"
+     },
+     {
+      "$n": "25996959176"
+     },
+     {
+      "$n": "16182193798"
+     },
+     {
+      "$n": "7900"
+     },
+     {
+      "$n": "7500"
+     },
+     {
+      "$n": "1708996329120134630"
+     }
+    ]
+   }
+  },
+  {
+   "key": "0x794a61358d6845594f94dc1db02a252b5b4814ad.getUserEMode([\"0x71eB4B47BAB029348AE6Ef5d40B1784f07825675\"])",
+   "result": {
+    "status": "success",
+    "value": {
+     "$n": "0"
+    }
+   }
+  },
+  {
+   "key": "0x794a61358d6845594f94dc1db02a252b5b4814ad.getUserAccountData([\"0x5BD136eBaB3494cD4675f69E79bCDce35d5141d6\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "508622796254"
+     },
+     {
+      "$n": "306220492475"
+     },
+     {
+      "$n": "105763972490"
+     },
+     {
+      "$n": "8400"
+     },
+     {
+      "$n": "8100"
+     },
+     {
+      "$n": "1395214100141388651"
+     }
+    ]
+   }
+  },
+  {
+   "key": "0x794a61358d6845594f94dc1db02a252b5b4814ad.getUserEMode([\"0x5BD136eBaB3494cD4675f69E79bCDce35d5141d6\"])",
+   "result": {
+    "status": "success",
+    "value": {
+     "$n": "0"
+    }
+   }
+  },
+  {
+   "key": "0x794a61358d6845594f94dc1db02a252b5b4814ad.getUserAccountData([\"0x8e198424AAcf7908640e5F266f81F3Fa6A639019\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "483183134232"
+     },
+     {
+      "$n": "291845657245"
+     },
+     {
+      "$n": "85037187455"
+     },
+     {
+      "$n": "8200"
+     },
+     {
+      "$n": "7800"
+     },
+     {
+      "$n": "1357601733088759225"
+     }
+    ]
+   }
+  },
+  {
+   "key": "0x794a61358d6845594f94dc1db02a252b5b4814ad.getUserEMode([\"0x8e198424AAcf7908640e5F266f81F3Fa6A639019\"])",
+   "result": {
+    "status": "success",
+    "value": {
+     "$n": "0"
+    }
+   }
+  },
+  {
+   "key": "0x794a61358d6845594f94dc1db02a252b5b4814ad.getUserAccountData([\"0xe5EC006540bE4F7CbB2CBc7Be79708a6d96F90dC\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "9158137156856"
+     },
+     {
+      "$n": "3763411166736"
+     },
+     {
+      "$n": "3654679930317"
+     },
+     {
+      "$n": "8400"
+     },
+     {
+      "$n": "8100"
+     },
+     {
+      "$n": "2044112341418974606"
+     }
+    ]
+   }
+  },
+  {
+   "key": "0x794a61358d6845594f94dc1db02a252b5b4814ad.getUserEMode([\"0xe5EC006540bE4F7CbB2CBc7Be79708a6d96F90dC\"])",
+   "result": {
+    "status": "success",
+    "value": {
+     "$n": "0"
+    }
+   }
+  },
+  {
+   "key": "0x794a61358d6845594f94dc1db02a252b5b4814ad.getUserAccountData([\"0x053D55f9B5AF8694c503EB288a1B7E552f590710\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "152210931724"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "114158198793"
+     },
+     {
+      "$n": "7700"
+     },
+     {
+      "$n": "7500"
+     },
+     {
+      "$n": "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+     }
+    ]
+   }
+  },
+  {
+   "key": "0x794a61358d6845594f94dc1db02a252b5b4814ad.getUserEMode([\"0x053D55f9B5AF8694c503EB288a1B7E552f590710\"])",
+   "result": {
+    "status": "success",
+    "value": {
+     "$n": "0"
+    }
+   }
+  },
+  {
+   "key": "0x794a61358d6845594f94dc1db02a252b5b4814ad.getUserAccountData([\"0xcA11bde05977b3631167028862bE2a173976CA11\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+     }
+    ]
+   }
+  },
+  {
+   "key": "0x794a61358d6845594f94dc1db02a252b5b4814ad.getUserEMode([\"0xcA11bde05977b3631167028862bE2a173976CA11\"])",
+   "result": {
+    "status": "success",
+    "value": {
+     "$n": "0"
+    }
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1\",\"0xe5EC006540bE4F7CbB2CBc7Be79708a6d96F90dC\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "12579700534137392393054794"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xf97f4df75117a78c1A5a0DBb814Af92458539FB4\",\"0xe5EC006540bE4F7CbB2CBc7Be79708a6d96F90dC\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "65013579031590958677538"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8\",\"0xe5EC006540bE4F7CbB2CBc7Be79708a6d96F90dC\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "74661752106411370508733695"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f\",\"0xe5EC006540bE4F7CbB2CBc7Be79708a6d96F90dC\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "114112013483584659714342"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x82aF49447D8a07e3bd95BD0d56f35241523fBab1\",\"0xe5EC006540bE4F7CbB2CBc7Be79708a6d96F90dC\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "54026001566818882375"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "9012370759777957727503257"
+     },
+     0,
+     true
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9\",\"0xe5EC006540bE4F7CbB2CBc7Be79708a6d96F90dC\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "16145965188"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "12078475121"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "42702227041706831909896467"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xba5DdD1f9d7F570dc94a51479a000E3BCE967196\",\"0xe5EC006540bE4F7CbB2CBc7Be79708a6d96F90dC\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xD22a58f79e9481D1a88e00c343885A588b34b68B\",\"0xe5EC006540bE4F7CbB2CBc7Be79708a6d96F90dC\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "7404029465499763952320742"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x5979D7b546E38E414F7E9822514be443A4800529\",\"0xe5EC006540bE4F7CbB2CBc7Be79708a6d96F90dC\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "43708841468148368008"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x3F56e0c36d275367b8C502090EDF38289b3dEa0d\",\"0xe5EC006540bE4F7CbB2CBc7Be79708a6d96F90dC\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "9945008479560691114085"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xEC70Dcb4A1EFa46b8F2D97C310C9c4790ba5ffA8\",\"0xe5EC006540bE4F7CbB2CBc7Be79708a6d96F90dC\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "27384489924882289488443"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x93b346b6BC2548dA6A1E7d98E9a421B42541425b\",\"0xe5EC006540bE4F7CbB2CBc7Be79708a6d96F90dC\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xaf88d065e77c8cC2239327C5EDb3A432268e5831\",\"0xe5EC006540bE4F7CbB2CBc7Be79708a6d96F90dC\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "21512168084"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "17168474314"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "38753637435909268110066738"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x17FC002b466eEc40DaE837Fc4bE5c67993ddBd6F\",\"0xe5EC006540bE4F7CbB2CBc7Be79708a6d96F90dC\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x912CE59144191C1204E64559FE8253a0e49E6548\",\"0xe5EC006540bE4F7CbB2CBc7Be79708a6d96F90dC\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "734883863771068622651534"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x35751007a407ca6FEFfE80b3cB397736D2cf4dbe\",\"0xe5EC006540bE4F7CbB2CBc7Be79708a6d96F90dC\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "284002028423076676056"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x7dfF72693f6A4149b17e7C6314655f6A9F7c8B33\",\"0xe5EC006540bE4F7CbB2CBc7Be79708a6d96F90dC\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "51507404822927052395899789"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x2416092f143378750bb29b79eD961ab195CcEea5\",\"0xe5EC006540bE4F7CbB2CBc7Be79708a6d96F90dC\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x4186BFC76E2E237523CBC30FD220FE055156b41F\",\"0xe5EC006540bE4F7CbB2CBc7Be79708a6d96F90dC\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x6c84a8f1c29108F47a79964b5Fe888D4f4D0dE40\",\"0xe5EC006540bE4F7CbB2CBc7Be79708a6d96F90dC\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1\",\"0x5BD136eBaB3494cD4675f69E79bCDce35d5141d6\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "12579700534137392393054794"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xf97f4df75117a78c1A5a0DBb814Af92458539FB4\",\"0x5BD136eBaB3494cD4675f69E79bCDce35d5141d6\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "65013579031590958677538"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8\",\"0x5BD136eBaB3494cD4675f69E79bCDce35d5141d6\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "74661752106411370508733695"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f\",\"0x5BD136eBaB3494cD4675f69E79bCDce35d5141d6\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "114112013483584659714342"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x82aF49447D8a07e3bd95BD0d56f35241523fBab1\",\"0x5BD136eBaB3494cD4675f69E79bCDce35d5141d6\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "3000485307951578206"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "9012370759777957727503257"
+     },
+     0,
+     true
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9\",\"0x5BD136eBaB3494cD4675f69E79bCDce35d5141d6\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "42702227041706831909896467"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xba5DdD1f9d7F570dc94a51479a000E3BCE967196\",\"0x5BD136eBaB3494cD4675f69E79bCDce35d5141d6\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xD22a58f79e9481D1a88e00c343885A588b34b68B\",\"0x5BD136eBaB3494cD4675f69E79bCDce35d5141d6\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "7404029465499763952320742"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x5979D7b546E38E414F7E9822514be443A4800529\",\"0x5BD136eBaB3494cD4675f69E79bCDce35d5141d6\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "43708841468148368008"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x3F56e0c36d275367b8C502090EDF38289b3dEa0d\",\"0x5BD136eBaB3494cD4675f69E79bCDce35d5141d6\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "9945008479560691114085"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xEC70Dcb4A1EFa46b8F2D97C310C9c4790ba5ffA8\",\"0x5BD136eBaB3494cD4675f69E79bCDce35d5141d6\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "27384489924882289488443"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x93b346b6BC2548dA6A1E7d98E9a421B42541425b\",\"0x5BD136eBaB3494cD4675f69E79bCDce35d5141d6\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xaf88d065e77c8cC2239327C5EDb3A432268e5831\",\"0x5BD136eBaB3494cD4675f69E79bCDce35d5141d6\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "3062567594"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "2444180097"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "38753637435909268110066738"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x17FC002b466eEc40DaE837Fc4bE5c67993ddBd6F\",\"0x5BD136eBaB3494cD4675f69E79bCDce35d5141d6\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x912CE59144191C1204E64559FE8253a0e49E6548\",\"0x5BD136eBaB3494cD4675f69E79bCDce35d5141d6\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "734883863771068622651534"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x35751007a407ca6FEFfE80b3cB397736D2cf4dbe\",\"0x5BD136eBaB3494cD4675f69E79bCDce35d5141d6\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "284002028423076676056"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x7dfF72693f6A4149b17e7C6314655f6A9F7c8B33\",\"0x5BD136eBaB3494cD4675f69E79bCDce35d5141d6\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "51507404822927052395899789"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x2416092f143378750bb29b79eD961ab195CcEea5\",\"0x5BD136eBaB3494cD4675f69E79bCDce35d5141d6\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x4186BFC76E2E237523CBC30FD220FE055156b41F\",\"0x5BD136eBaB3494cD4675f69E79bCDce35d5141d6\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x6c84a8f1c29108F47a79964b5Fe888D4f4D0dE40\",\"0x5BD136eBaB3494cD4675f69E79bCDce35d5141d6\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1\",\"0x9Fb2e86637d4BB0B8092DB29e9c43cAa8634C9E9\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "12579700534137392393054794"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xf97f4df75117a78c1A5a0DBb814Af92458539FB4\",\"0x9Fb2e86637d4BB0B8092DB29e9c43cAa8634C9E9\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "65013579031590958677538"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8\",\"0x9Fb2e86637d4BB0B8092DB29e9c43cAa8634C9E9\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "74661752106411370508733695"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f\",\"0x9Fb2e86637d4BB0B8092DB29e9c43cAa8634C9E9\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "114112013483584659714342"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x82aF49447D8a07e3bd95BD0d56f35241523fBab1\",\"0x9Fb2e86637d4BB0B8092DB29e9c43cAa8634C9E9\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "9012370759777957727503257"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9\",\"0x9Fb2e86637d4BB0B8092DB29e9c43cAa8634C9E9\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "42702227041706831909896467"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xba5DdD1f9d7F570dc94a51479a000E3BCE967196\",\"0x9Fb2e86637d4BB0B8092DB29e9c43cAa8634C9E9\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xD22a58f79e9481D1a88e00c343885A588b34b68B\",\"0x9Fb2e86637d4BB0B8092DB29e9c43cAa8634C9E9\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "7404029465499763952320742"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x5979D7b546E38E414F7E9822514be443A4800529\",\"0x9Fb2e86637d4BB0B8092DB29e9c43cAa8634C9E9\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "43708841468148368008"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x3F56e0c36d275367b8C502090EDF38289b3dEa0d\",\"0x9Fb2e86637d4BB0B8092DB29e9c43cAa8634C9E9\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "9945008479560691114085"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xEC70Dcb4A1EFa46b8F2D97C310C9c4790ba5ffA8\",\"0x9Fb2e86637d4BB0B8092DB29e9c43cAa8634C9E9\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "27384489924882289488443"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x93b346b6BC2548dA6A1E7d98E9a421B42541425b\",\"0x9Fb2e86637d4BB0B8092DB29e9c43cAa8634C9E9\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xaf88d065e77c8cC2239327C5EDb3A432268e5831\",\"0x9Fb2e86637d4BB0B8092DB29e9c43cAa8634C9E9\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "473045849"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "377529381"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "38753637435909268110066738"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x17FC002b466eEc40DaE837Fc4bE5c67993ddBd6F\",\"0x9Fb2e86637d4BB0B8092DB29e9c43cAa8634C9E9\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x912CE59144191C1204E64559FE8253a0e49E6548\",\"0x9Fb2e86637d4BB0B8092DB29e9c43cAa8634C9E9\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "10000031481547001755939"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "734883863771068622651534"
+     },
+     0,
+     true
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x35751007a407ca6FEFfE80b3cB397736D2cf4dbe\",\"0x9Fb2e86637d4BB0B8092DB29e9c43cAa8634C9E9\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "284002028423076676056"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x7dfF72693f6A4149b17e7C6314655f6A9F7c8B33\",\"0x9Fb2e86637d4BB0B8092DB29e9c43cAa8634C9E9\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "51507404822927052395899789"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x2416092f143378750bb29b79eD961ab195CcEea5\",\"0x9Fb2e86637d4BB0B8092DB29e9c43cAa8634C9E9\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x4186BFC76E2E237523CBC30FD220FE055156b41F\",\"0x9Fb2e86637d4BB0B8092DB29e9c43cAa8634C9E9\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x6c84a8f1c29108F47a79964b5Fe888D4f4D0dE40\",\"0x9Fb2e86637d4BB0B8092DB29e9c43cAa8634C9E9\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1\",\"0x71eB4B47BAB029348AE6Ef5d40B1784f07825675\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "12579700534137392393054794"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xf97f4df75117a78c1A5a0DBb814Af92458539FB4\",\"0x71eB4B47BAB029348AE6Ef5d40B1784f07825675\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "65013579031590958677538"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8\",\"0x71eB4B47BAB029348AE6Ef5d40B1784f07825675\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "74661752106411370508733695"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f\",\"0x71eB4B47BAB029348AE6Ef5d40B1784f07825675\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "114112013483584659714342"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x82aF49447D8a07e3bd95BD0d56f35241523fBab1\",\"0x71eB4B47BAB029348AE6Ef5d40B1784f07825675\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "9012370759777957727503257"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9\",\"0x71eB4B47BAB029348AE6Ef5d40B1784f07825675\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "42702227041706831909896467"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xba5DdD1f9d7F570dc94a51479a000E3BCE967196\",\"0x71eB4B47BAB029348AE6Ef5d40B1784f07825675\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xD22a58f79e9481D1a88e00c343885A588b34b68B\",\"0x71eB4B47BAB029348AE6Ef5d40B1784f07825675\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "7404029465499763952320742"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x5979D7b546E38E414F7E9822514be443A4800529\",\"0x71eB4B47BAB029348AE6Ef5d40B1784f07825675\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "265370023922342285"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "43708841468148368008"
+     },
+     0,
+     true
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x3F56e0c36d275367b8C502090EDF38289b3dEa0d\",\"0x71eB4B47BAB029348AE6Ef5d40B1784f07825675\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "9945008479560691114085"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xEC70Dcb4A1EFa46b8F2D97C310C9c4790ba5ffA8\",\"0x71eB4B47BAB029348AE6Ef5d40B1784f07825675\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "27384489924882289488443"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x93b346b6BC2548dA6A1E7d98E9a421B42541425b\",\"0x71eB4B47BAB029348AE6Ef5d40B1784f07825675\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xaf88d065e77c8cC2239327C5EDb3A432268e5831\",\"0x71eB4B47BAB029348AE6Ef5d40B1784f07825675\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "260000381"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "207501626"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "38753637435909268110066738"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x17FC002b466eEc40DaE837Fc4bE5c67993ddBd6F\",\"0x71eB4B47BAB029348AE6Ef5d40B1784f07825675\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x912CE59144191C1204E64559FE8253a0e49E6548\",\"0x71eB4B47BAB029348AE6Ef5d40B1784f07825675\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "734883863771068622651534"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x35751007a407ca6FEFfE80b3cB397736D2cf4dbe\",\"0x71eB4B47BAB029348AE6Ef5d40B1784f07825675\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "284002028423076676056"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x7dfF72693f6A4149b17e7C6314655f6A9F7c8B33\",\"0x71eB4B47BAB029348AE6Ef5d40B1784f07825675\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "51507404822927052395899789"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x2416092f143378750bb29b79eD961ab195CcEea5\",\"0x71eB4B47BAB029348AE6Ef5d40B1784f07825675\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x4186BFC76E2E237523CBC30FD220FE055156b41F\",\"0x71eB4B47BAB029348AE6Ef5d40B1784f07825675\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x6c84a8f1c29108F47a79964b5Fe888D4f4D0dE40\",\"0x71eB4B47BAB029348AE6Ef5d40B1784f07825675\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1\",\"0x053D55f9B5AF8694c503EB288a1B7E552f590710\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "22346265214807248865708"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "12579700534137392393054794"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xf97f4df75117a78c1A5a0DBb814Af92458539FB4\",\"0x053D55f9B5AF8694c503EB288a1B7E552f590710\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "71995356665731903984"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "65013579031590958677538"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8\",\"0x053D55f9B5AF8694c503EB288a1B7E552f590710\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "57465050474"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "74661752106411370508733695"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f\",\"0x053D55f9B5AF8694c503EB288a1B7E552f590710\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "731572624"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "114112013483584659714342"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x82aF49447D8a07e3bd95BD0d56f35241523fBab1\",\"0x053D55f9B5AF8694c503EB288a1B7E552f590710\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "94405860123349206094"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "9012370759777957727503257"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9\",\"0x053D55f9B5AF8694c503EB288a1B7E552f590710\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "65858455498"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "42702227041706831909896467"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xba5DdD1f9d7F570dc94a51479a000E3BCE967196\",\"0x053D55f9B5AF8694c503EB288a1B7E552f590710\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "106845003010853108432"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xD22a58f79e9481D1a88e00c343885A588b34b68B\",\"0x053D55f9B5AF8694c503EB288a1B7E552f590710\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "958258"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "7404029465499763952320742"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x5979D7b546E38E414F7E9822514be443A4800529\",\"0x053D55f9B5AF8694c503EB288a1B7E552f590710\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "1436036590533551689"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "43708841468148368008"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x3F56e0c36d275367b8C502090EDF38289b3dEa0d\",\"0x053D55f9B5AF8694c503EB288a1B7E552f590710\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "646274687582631628501"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "9945008479560691114085"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xEC70Dcb4A1EFa46b8F2D97C310C9c4790ba5ffA8\",\"0x053D55f9B5AF8694c503EB288a1B7E552f590710\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "2477864843008529545"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "27384489924882289488443"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x93b346b6BC2548dA6A1E7d98E9a421B42541425b\",\"0x053D55f9B5AF8694c503EB288a1B7E552f590710\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "12372824924726270034939"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xaf88d065e77c8cC2239327C5EDb3A432268e5831\",\"0x053D55f9B5AF8694c503EB288a1B7E552f590710\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "256013770461"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "38753637435909268110066738"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x17FC002b466eEc40DaE837Fc4bE5c67993ddBd6F\",\"0x053D55f9B5AF8694c503EB288a1B7E552f590710\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "11633344073806816538279"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x912CE59144191C1204E64559FE8253a0e49E6548\",\"0x053D55f9B5AF8694c503EB288a1B7E552f590710\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "98054045985530903496508"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "734883863771068622651534"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x35751007a407ca6FEFfE80b3cB397736D2cf4dbe\",\"0x053D55f9B5AF8694c503EB288a1B7E552f590710\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "809661788810743551"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "284002028423076676056"
+     },
+     0,
+     true
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x7dfF72693f6A4149b17e7C6314655f6A9F7c8B33\",\"0x053D55f9B5AF8694c503EB288a1B7E552f590710\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "1600251742201271605326"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "51507404822927052395899789"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x2416092f143378750bb29b79eD961ab195CcEea5\",\"0x053D55f9B5AF8694c503EB288a1B7E552f590710\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "180085014824137816"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x4186BFC76E2E237523CBC30FD220FE055156b41F\",\"0x053D55f9B5AF8694c503EB288a1B7E552f590710\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "3451337459896062"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x6c84a8f1c29108F47a79964b5Fe888D4f4D0dE40\",\"0x053D55f9B5AF8694c503EB288a1B7E552f590710\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "13411693471932462"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1\",\"0x8e198424AAcf7908640e5F266f81F3Fa6A639019\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "12579700534137392393054794"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xf97f4df75117a78c1A5a0DBb814Af92458539FB4\",\"0x8e198424AAcf7908640e5F266f81F3Fa6A639019\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "65013579031590958677538"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8\",\"0x8e198424AAcf7908640e5F266f81F3Fa6A639019\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "74661752106411370508733695"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f\",\"0x8e198424AAcf7908640e5F266f81F3Fa6A639019\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "7984058"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "114112013483584659714342"
+     },
+     0,
+     true
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x82aF49447D8a07e3bd95BD0d56f35241523fBab1\",\"0x8e198424AAcf7908640e5F266f81F3Fa6A639019\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "9012370759777957727503257"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9\",\"0x8e198424AAcf7908640e5F266f81F3Fa6A639019\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "42702227041706831909896467"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xba5DdD1f9d7F570dc94a51479a000E3BCE967196\",\"0x8e198424AAcf7908640e5F266f81F3Fa6A639019\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xD22a58f79e9481D1a88e00c343885A588b34b68B\",\"0x8e198424AAcf7908640e5F266f81F3Fa6A639019\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "7404029465499763952320742"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x5979D7b546E38E414F7E9822514be443A4800529\",\"0x8e198424AAcf7908640e5F266f81F3Fa6A639019\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "43708841468148368008"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x3F56e0c36d275367b8C502090EDF38289b3dEa0d\",\"0x8e198424AAcf7908640e5F266f81F3Fa6A639019\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "9945008479560691114085"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xEC70Dcb4A1EFa46b8F2D97C310C9c4790ba5ffA8\",\"0x8e198424AAcf7908640e5F266f81F3Fa6A639019\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "27384489924882289488443"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x93b346b6BC2548dA6A1E7d98E9a421B42541425b\",\"0x8e198424AAcf7908640e5F266f81F3Fa6A639019\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0xaf88d065e77c8cC2239327C5EDb3A432268e5831\",\"0x8e198424AAcf7908640e5F266f81F3Fa6A639019\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "2918802217"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "2329443536"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "38753637435909268110066738"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x17FC002b466eEc40DaE837Fc4bE5c67993ddBd6F\",\"0x8e198424AAcf7908640e5F266f81F3Fa6A639019\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x912CE59144191C1204E64559FE8253a0e49E6548\",\"0x8e198424AAcf7908640e5F266f81F3Fa6A639019\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "734883863771068622651534"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x35751007a407ca6FEFfE80b3cB397736D2cf4dbe\",\"0x8e198424AAcf7908640e5F266f81F3Fa6A639019\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "284002028423076676056"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x7dfF72693f6A4149b17e7C6314655f6A9F7c8B33\",\"0x8e198424AAcf7908640e5F266f81F3Fa6A639019\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "51507404822927052395899789"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x2416092f143378750bb29b79eD961ab195CcEea5\",\"0x8e198424AAcf7908640e5F266f81F3Fa6A639019\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x4186BFC76E2E237523CBC30FD220FE055156b41F\",\"0x8e198424AAcf7908640e5F266f81F3Fa6A639019\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     0,
+     false
+    ]
+   }
+  },
+  {
+   "key": "0x243aa95cac2a25651eda86e80bee66114413c43b.getUserReserveData([\"0x6c84a8f1c29108F47a79964b5Fe888D4f4D0dE40\",\"0x8e198424AAcf7908640e5F266f81F3Fa6A639019\"])",
+   "result": {
+    "status": "success",
+    "value": [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     0,
+     false
+    ]
+   }
+  }
+ ],
+ "expected": [
+  {
+   "network": "arbitrum",
+   "wallet": "0x9Fb2e86637d4BB0B8092DB29e9c43cAa8634C9E9",
+   "status": "ok",
+   "snapshot": {
+    "network": "arbitrum",
+    "wallet": "0x9Fb2e86637d4BB0B8092DB29e9c43cAa8634C9E9",
+    "source": "onchain",
+    "totalCollateralUsd": 1143.57530014,
+    "totalDebtUsd": 472.98983092,
+    "availableBorrowsUsd": 190.28384316,
+    "liquidationThreshold": 0.63,
+    "ltv": 0.58,
+    "healthFactor": 1.523188009532609,
+    "healthFactorWad": "1523188009532608832",
+    "eModeCategory": 9,
+    "collateral": [
+     {
+      "asset": "0x912CE59144191C1204E64559FE8253a0e49E6548",
+      "symbol": "ARB",
+      "amount": 10000.031481547001,
+      "priceUsd": 0.11435717,
+      "valueUsd": 1143.5753001406222
+     }
+    ],
+    "debts": [
+     {
+      "asset": "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
+      "symbol": "USDC",
+      "amount": 473.045849,
+      "priceUsd": 0.99988158,
+      "valueUsd": 472.9898309105614
+     }
+    ],
+    "assetBreakdownAvailable": true,
+    "blockNumber": 527842374,
+    "blockTimestamp": 1795731831
+   },
+   "fetchedAt": 0
+  },
+  {
+   "network": "arbitrum",
+   "wallet": "0x71eB4B47BAB029348AE6Ef5d40B1784f07825675",
+   "status": "ok",
+   "snapshot": {
+    "network": "arbitrum",
+    "wallet": "0x71eB4B47BAB029348AE6Ef5d40B1784f07825675",
+    "source": "onchain",
+    "totalCollateralUsd": 562.38870633,
+    "totalDebtUsd": 259.96959176,
+    "availableBorrowsUsd": 161.82193798,
+    "liquidationThreshold": 0.79,
+    "ltv": 0.75,
+    "healthFactor": 1.7089963291201347,
+    "healthFactorWad": "1708996329120134630",
+    "eModeCategory": 0,
+    "collateral": [
+     {
+      "asset": "0x5979D7b546E38E414F7E9822514be443A4800529",
+      "symbol": "wstETH",
+      "amount": 0.26537002392234227,
+      "priceUsd": 2119.26237192,
+      "valueUsd": 562.3887063341302
+     }
+    ],
+    "debts": [
+     {
+      "asset": "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
+      "symbol": "USDC",
+      "amount": 260.000381,
+      "priceUsd": 0.99988158,
+      "valueUsd": 259.969591754882
+     }
+    ],
+    "assetBreakdownAvailable": true,
+    "blockNumber": 527842374,
+    "blockTimestamp": 1795731831
+   },
+   "fetchedAt": 0
+  },
+  {
+   "network": "arbitrum",
+   "wallet": "0x5BD136eBaB3494cD4675f69E79bCDce35d5141d6",
+   "status": "ok",
+   "snapshot": {
+    "network": "arbitrum",
+    "wallet": "0x5BD136eBaB3494cD4675f69E79bCDce35d5141d6",
+    "source": "onchain",
+    "totalCollateralUsd": 5086.22796254,
+    "totalDebtUsd": 3062.20492475,
+    "availableBorrowsUsd": 1057.6397249,
+    "liquidationThreshold": 0.84,
+    "ltv": 0.81,
+    "healthFactor": 1.3952141001413887,
+    "healthFactorWad": "1395214100141388651",
+    "eModeCategory": 0,
+    "collateral": [
+     {
+      "asset": "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
+      "symbol": "WETH",
+      "amount": 3.0004853079515783,
+      "priceUsd": 1695.1351,
+      "valueUsd": 5086.227962543029
+     }
+    ],
+    "debts": [
+     {
+      "asset": "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
+      "symbol": "USDC",
+      "amount": 3062.567594,
+      "priceUsd": 0.99988158,
+      "valueUsd": 3062.204924745519
+     }
+    ],
+    "assetBreakdownAvailable": true,
+    "blockNumber": 527842374,
+    "blockTimestamp": 1795731831
+   },
+   "fetchedAt": 0
+  },
+  {
+   "network": "arbitrum",
+   "wallet": "0x8e198424AAcf7908640e5F266f81F3Fa6A639019",
+   "status": "ok",
+   "snapshot": {
+    "network": "arbitrum",
+    "wallet": "0x8e198424AAcf7908640e5F266f81F3Fa6A639019",
+    "source": "onchain",
+    "totalCollateralUsd": 4831.83134232,
+    "totalDebtUsd": 2918.45657245,
+    "availableBorrowsUsd": 850.37187455,
+    "liquidationThreshold": 0.82,
+    "ltv": 0.78,
+    "healthFactor": 1.3576017330887593,
+    "healthFactorWad": "1357601733088759225",
+    "eModeCategory": 0,
+    "collateral": [
+     {
+      "asset": "0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f",
+      "symbol": "WBTC",
+      "amount": 0.07984058,
+      "priceUsd": 60518.49,
+      "valueUsd": 4831.8313423242
+     }
+    ],
+    "debts": [
+     {
+      "asset": "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
+      "symbol": "USDC",
+      "amount": 2918.802217,
+      "priceUsd": 0.99988158,
+      "valueUsd": 2918.456572441463
+     }
+    ],
+    "assetBreakdownAvailable": true,
+    "blockNumber": 527842374,
+    "blockTimestamp": 1795731831
+   },
+   "fetchedAt": 0
+  },
+  {
+   "network": "arbitrum",
+   "wallet": "0xe5EC006540bE4F7CbB2CBc7Be79708a6d96F90dC",
+   "status": "ok",
+   "snapshot": {
+    "network": "arbitrum",
+    "wallet": "0xe5EC006540bE4F7CbB2CBc7Be79708a6d96F90dC",
+    "source": "onchain",
+    "totalCollateralUsd": 91581.37156856,
+    "totalDebtUsd": 37634.11166736,
+    "availableBorrowsUsd": 36546.79930317,
+    "liquidationThreshold": 0.84,
+    "ltv": 0.81,
+    "healthFactor": 2.0441123414189746,
+    "healthFactorWad": "2044112341418974606",
+    "eModeCategory": 0,
+    "collateral": [
+     {
+      "asset": "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
+      "symbol": "WETH",
+      "amount": 54.026001566818884,
+      "priceUsd": 1695.1351,
+      "valueUsd": 91581.37156856968
+     }
+    ],
+    "debts": [
+     {
+      "asset": "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
+      "symbol": "USDC",
+      "amount": 21512.168084,
+      "priceUsd": 0.99988158,
+      "valueUsd": 21509.620613055493
+     },
+     {
+      "asset": "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9",
+      "symbol": "USD₮0",
+      "amount": 16145.965188,
+      "priceUsd": 0.99867,
+      "valueUsd": 16124.491054299959
+     }
+    ],
+    "assetBreakdownAvailable": true,
+    "blockNumber": 527842374,
+    "blockTimestamp": 1795731831
+   },
+   "fetchedAt": 0
+  },
+  {
+   "network": "arbitrum",
+   "wallet": "0x053D55f9B5AF8694c503EB288a1B7E552f590710",
+   "status": "ok",
+   "snapshot": {
+    "network": "arbitrum",
+    "wallet": "0x053D55f9B5AF8694c503EB288a1B7E552f590710",
+    "source": "onchain",
+    "totalCollateralUsd": 1522.10931724,
+    "totalDebtUsd": 0,
+    "availableBorrowsUsd": 1141.58198793,
+    "liquidationThreshold": 0.77,
+    "ltv": 0.75,
+    "healthFactor": null,
+    "healthFactorWad": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+    "eModeCategory": 0,
+    "collateral": [
+     {
+      "asset": "0x35751007a407ca6FEFfE80b3cB397736D2cf4dbe",
+      "symbol": "weETH",
+      "amount": 0.8096617888107436,
+      "priceUsd": 1879.93226095,
+      "valueUsd": 1522.1093172438025
+     }
+    ],
+    "debts": [],
+    "assetBreakdownAvailable": true,
+    "blockNumber": 527842374,
+    "blockTimestamp": 1795731831
+   },
+   "fetchedAt": 0
+  },
+  {
+   "network": "arbitrum",
+   "wallet": "0xcA11bde05977b3631167028862bE2a173976CA11",
+   "status": "ok",
+   "snapshot": {
+    "network": "arbitrum",
+    "wallet": "0xcA11bde05977b3631167028862bE2a173976CA11",
+    "source": "onchain",
+    "totalCollateralUsd": 0,
+    "totalDebtUsd": 0,
+    "availableBorrowsUsd": 0,
+    "liquidationThreshold": 0,
+    "ltv": 0,
+    "healthFactor": null,
+    "healthFactorWad": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+    "eModeCategory": 0,
+    "collateral": [],
+    "debts": [],
+    "assetBreakdownAvailable": true,
+    "blockNumber": 527842374,
+    "blockTimestamp": 1795731831
+   },
+   "fetchedAt": 0
+  }
+ ],
+ "whatIfChecks": [
+  {
+   "wallet": "0x9Fb2e86637d4BB0B8092DB29e9c43cAa8634C9E9",
+   "asset": "ARB",
+   "share": 1,
+   "dropFraction": 0.34348222692033237,
+   "estimatedLiquidationPriceUsd": 0.07507751458409297,
+   "aaveHealthFactorAtThatPrice": 0.999999938934205
+  },
+  {
+   "wallet": "0x71eB4B47BAB029348AE6Ef5d40B1784f07825675",
+   "asset": "wstETH",
+   "share": 1,
+   "dropFraction": 0.4148612358255659,
+   "estimatedLiquidationPriceUsd": 1240.0625652666488,
+   "aaveHealthFactorAtThatPrice": 1.0000000000073086
+  },
+  {
+   "wallet": "0x5BD136eBaB3494cD4675f69E79bCDce35d5141d6",
+   "asset": "WETH",
+   "share": 1,
+   "dropFraction": 0.2832641241952316,
+   "estimatedLiquidationPriceUsd": 1214.9641405059035,
+   "aaveHealthFactorAtThatPrice": 1.0000000000016982
+  },
+  {
+   "wallet": "0x8e198424AAcf7908640e5F266f81F3Fa6A639019",
+   "asset": "WBTC",
+   "share": 1,
+   "dropFraction": 0.2634069509289434,
+   "estimatedLiquidationPriceUsd": 44577.499074276246,
+   "aaveHealthFactorAtThatPrice": 0.9999999999981498
+  },
+  {
+   "wallet": "0xe5EC006540bE4F7CbB2CBc7Be79708a6d96F90dC",
+   "asset": "WETH",
+   "share": 1,
+   "dropFraction": 0.5107900971304622,
+   "estimatedLiquidationPriceUsd": 829.2768776217442,
+   "aaveHealthFactorAtThatPrice": 0.9999999999978956
+  }
+ ],
+ "checks": [
+  {
+   "name": "fork block",
+   "pass": true,
+   "detail": "fork=527842374 pinned=527842374"
+  },
+  {
+   "name": "read ok: 0x9Fb2e866… (borrower found in public Borrow events)",
+   "pass": true,
+   "detail": "HF=1.5232 collateral=$1143.58 debt=$472.99"
+  },
+  {
+   "name": "HF matches Pool exactly: 0x9Fb2e866… (borrower found in public Borrow events)",
+   "pass": true,
+   "detail": "ours=1523188009532608832 pool=1523188009532608832"
+  },
+  {
+   "name": "collateral/debt match Pool: 0x9Fb2e866… (borrower found in public Borrow events)",
+   "pass": true,
+   "detail": "collateral 1143.57530014 vs 1143.57530014, debt 472.98983092 vs 472.98983092"
+  },
+  {
+   "name": "breakdown adds up (≤0.1% or ≤$0.01): 0x9Fb2e866… (borrower found in public Borrow events)",
+   "pass": true,
+   "detail": "collateral diff 0.00000000, debt diff 0.00000001"
+  },
+  {
+   "name": "what-if: Aave HF at our estimated price ≈ 1 (±0.01, single collateral): 0x9Fb2e866… (borrower found in public Borrow events)",
+   "pass": true,
+   "detail": "drop 34.35% in ARB (share 100.0%) -> Aave HF 1.0000; fork restored: true"
+  },
+  {
+   "name": "read ok: 0x71eB4B47… (borrower found in public Borrow events)",
+   "pass": true,
+   "detail": "HF=1.7090 collateral=$562.39 debt=$259.97"
+  },
+  {
+   "name": "HF matches Pool exactly: 0x71eB4B47… (borrower found in public Borrow events)",
+   "pass": true,
+   "detail": "ours=1708996329120134630 pool=1708996329120134630"
+  },
+  {
+   "name": "collateral/debt match Pool: 0x71eB4B47… (borrower found in public Borrow events)",
+   "pass": true,
+   "detail": "collateral 562.38870633 vs 562.38870633, debt 259.96959176 vs 259.96959176"
+  },
+  {
+   "name": "breakdown adds up (≤0.1% or ≤$0.01): 0x71eB4B47… (borrower found in public Borrow events)",
+   "pass": true,
+   "detail": "collateral diff 0.00000000, debt diff 0.00000001"
+  },
+  {
+   "name": "what-if: Aave HF at our estimated price ≈ 1 (±0.01, single collateral): 0x71eB4B47… (borrower found in public Borrow events)",
+   "pass": true,
+   "detail": "drop 41.49% in wstETH (share 100.0%) -> Aave HF 1.0000; fork restored: true"
+  },
+  {
+   "name": "read ok: 0x5BD136eB… (borrower found in public Borrow events)",
+   "pass": true,
+   "detail": "HF=1.3952 collateral=$5086.23 debt=$3062.20"
+  },
+  {
+   "name": "HF matches Pool exactly: 0x5BD136eB… (borrower found in public Borrow events)",
+   "pass": true,
+   "detail": "ours=1395214100141388651 pool=1395214100141388651"
+  },
+  {
+   "name": "collateral/debt match Pool: 0x5BD136eB… (borrower found in public Borrow events)",
+   "pass": true,
+   "detail": "collateral 5086.22796254 vs 5086.22796254, debt 3062.20492475 vs 3062.20492475"
+  },
+  {
+   "name": "breakdown adds up (≤0.1% or ≤$0.01): 0x5BD136eB… (borrower found in public Borrow events)",
+   "pass": true,
+   "detail": "collateral diff 0.00000000, debt diff 0.00000000"
+  },
+  {
+   "name": "what-if: Aave HF at our estimated price ≈ 1 (±0.01, single collateral): 0x5BD136eB… (borrower found in public Borrow events)",
+   "pass": true,
+   "detail": "drop 28.33% in WETH (share 100.0%) -> Aave HF 1.0000; fork restored: true"
+  },
+  {
+   "name": "read ok: 0x8e198424… (borrower found in public Borrow events)",
+   "pass": true,
+   "detail": "HF=1.3576 collateral=$4831.83 debt=$2918.46"
+  },
+  {
+   "name": "HF matches Pool exactly: 0x8e198424… (borrower found in public Borrow events)",
+   "pass": true,
+   "detail": "ours=1357601733088759225 pool=1357601733088759225"
+  },
+  {
+   "name": "collateral/debt match Pool: 0x8e198424… (borrower found in public Borrow events)",
+   "pass": true,
+   "detail": "collateral 4831.83134232 vs 4831.83134232, debt 2918.45657245 vs 2918.45657245"
+  },
+  {
+   "name": "breakdown adds up (≤0.1% or ≤$0.01): 0x8e198424… (borrower found in public Borrow events)",
+   "pass": true,
+   "detail": "collateral diff 0.00000000, debt diff 0.00000001"
+  },
+  {
+   "name": "what-if: Aave HF at our estimated price ≈ 1 (±0.01, single collateral): 0x8e198424… (borrower found in public Borrow events)",
+   "pass": true,
+   "detail": "drop 26.34% in WBTC (share 100.0%) -> Aave HF 1.0000; fork restored: true"
+  },
+  {
+   "name": "read ok: 0xe5EC0065… (borrower found in public Borrow events)",
+   "pass": true,
+   "detail": "HF=2.0441 collateral=$91581.37 debt=$37634.11"
+  },
+  {
+   "name": "HF matches Pool exactly: 0xe5EC0065… (borrower found in public Borrow events)",
+   "pass": true,
+   "detail": "ours=2044112341418974606 pool=2044112341418974606"
+  },
+  {
+   "name": "collateral/debt match Pool: 0xe5EC0065… (borrower found in public Borrow events)",
+   "pass": true,
+   "detail": "collateral 91581.37156856 vs 91581.37156856, debt 37634.11166736 vs 37634.11166736"
+  },
+  {
+   "name": "breakdown adds up (≤0.1% or ≤$0.01): 0xe5EC0065… (borrower found in public Borrow events)",
+   "pass": true,
+   "detail": "collateral diff 0.00000001, debt diff 0.00000000"
+  },
+  {
+   "name": "what-if: Aave HF at our estimated price ≈ 1 (±0.01, single collateral): 0xe5EC0065… (borrower found in public Borrow events)",
+   "pass": true,
+   "detail": "drop 51.08% in WETH (share 100.0%) -> Aave HF 1.0000; fork restored: true"
+  },
+  {
+   "name": "read ok: 0x053D55f9… (Aave Collector (treasury), from the official address book)",
+   "pass": true,
+   "detail": "HF=no debt collateral=$1522.11 debt=$0.00"
+  },
+  {
+   "name": "HF matches Pool exactly: 0x053D55f9… (Aave Collector (treasury), from the official address book)",
+   "pass": true,
+   "detail": "ours=115792089237316195423570985008687907853269984665640564039457584007913129639935 pool=115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  },
+  {
+   "name": "collateral/debt match Pool: 0x053D55f9… (Aave Collector (treasury), from the official address book)",
+   "pass": true,
+   "detail": "collateral 1522.10931724 vs 1522.10931724, debt 0 vs 0"
+  },
+  {
+   "name": "breakdown adds up (≤0.1% or ≤$0.01): 0x053D55f9… (Aave Collector (treasury), from the official address book)",
+   "pass": true,
+   "detail": "collateral diff 0.00000000, debt diff 0.00000000"
+  },
+  {
+   "name": "read ok: 0xcA11bde0… (Multicall3 contract (expected: no position))",
+   "pass": true,
+   "detail": "HF=no debt collateral=$0.00 debt=$0.00"
+  },
+  {
+   "name": "HF matches Pool exactly: 0xcA11bde0… (Multicall3 contract (expected: no position))",
+   "pass": true,
+   "detail": "ours=115792089237316195423570985008687907853269984665640564039457584007913129639935 pool=115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  },
+  {
+   "name": "collateral/debt match Pool: 0xcA11bde0… (Multicall3 contract (expected: no position))",
+   "pass": true,
+   "detail": "collateral 0 vs 0, debt 0 vs 0"
+  },
+  {
+   "name": "deterministic (2 reads identical)",
+   "pass": true,
+   "detail": ""
+  }
+ ]
+}

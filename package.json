@@ -21,7 +21,8 @@
     "hash:password": "tsx scripts/hash-password.ts",
     "session:secret": "node -e \"console.log('SESSION_SECRET='+require('crypto').randomBytes(48).toString('base64url'))\"",
     "dashboard:dev": "npm --prefix dashboard run dev",
-    "dashboard:build": "npm --prefix dashboard run build"
+    "dashboard:build": "npm --prefix dashboard run build",
+    "fork:validate": "tsx --env-file-if-exists=.env scripts/fork-validate.ts"
   },
   "dependencies": {
     "@fastify/cookie": "^11.1.5",
