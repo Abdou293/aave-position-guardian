@@ -14,7 +14,7 @@
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "test": "vitest run",
     "verify:addresses": "tsx --env-file-if-exists=.env scripts/verify-addresses.ts",
-    "scan:secrets": "gitleaks dir . --config .gitleaks.toml --redact --no-banner",
+    "scan:secrets": "node scripts/scan-folder.mjs",
     "scan:history": "gitleaks git . --config .gitleaks.toml --redact --no-banner",
     "scan:all": "npm run scan:secrets && npm run scan:history",
     "read:position": "tsx --env-file-if-exists=.env scripts/read-position.ts"
