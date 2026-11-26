@@ -8,7 +8,10 @@ import { loadConfig } from './config/env.js';
 import type { PositionDataSource } from './core/types.js';
 import { OnChainDataSource } from './datasources/onchain.js';
 import { DEMO_SCENARIOS, SimulatedDataSource } from './datasources/simulated.js';
+import { createPgDriver, isPostgresUrl } from './db/pgDriver.js';
+import { PostgresStore } from './db/PostgresStore.js';
 import { SqliteStore, sqlitePathFromUrl } from './db/SqliteStore.js';
+import type { Store } from './db/Store.js';
 import { BotService } from './bot/BotService.js';
 import { createTelegramBot, registerCommands, telegramSender } from './bot/telegram.js';
 import { log } from './lib/log.js';
@@ -19,8 +22,12 @@ async function main() {
   const config = loadConfig();
   log.info(`Aave Position Guardian starting in ${config.mode.toUpperCase()} mode (read-only, non-custodial)`);
 
-  const store = new SqliteStore(sqlitePathFromUrl(config.databaseUrl));
+  // SQLite file for development; PostgreSQL (postgres:// URL) for hosting, where the disk is not persistent.
+  const store: Store = isPostgresUrl(config.databaseUrl)
+    ? new PostgresStore(createPgDriver(config.databaseUrl))
+    : new SqliteStore(sqlitePathFromUrl(config.databaseUrl));
   await store.migrate();
+  log.info(`Database: ${isPostgresUrl(config.databaseUrl) ? 'PostgreSQL' : 'SQLite file'}`);
 
   // Data source: simulated in demo mode, on-chain (verified addresses only) in live mode.
   let source: PositionDataSource;
