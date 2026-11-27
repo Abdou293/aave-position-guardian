@@ -8,6 +8,8 @@ alerts and network health.
 **Live demo (simulated data only):** [aave-position-guardian.vercel.app](https://aave-position-guardian.vercel.app)
 The backend runs on a free host that sleeps. The first visit can take about a minute to wake up.
 
+**Demo video (55 s):** [docs/portfolio/aave-position-guardian-demo.mp4](docs/portfolio/aave-position-guardian-demo.mp4)
+
 > [!WARNING]
 > **Not financial advice. Not audited. No guarantee.** This is a portfolio project. Alerts can be
 > **delayed or fail**: RPC outages, a sleeping host, Telegram problems. It **cannot guarantee** that
