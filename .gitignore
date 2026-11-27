@@ -38,3 +38,6 @@ Thumbs.db
 
 # --- Claude Code local settings ---
 .claude/settings.local.json
+
+# Vercel CLI project link (local)
+.vercel/
